@@ -1,0 +1,45 @@
+<nav class="navbar navbar-expand-lg category-nav">
+    <div class="container">
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+            (click)="toggleCollapsed()">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+
+        <div class="collapse navbar-collapse" id="navbarContent"
+            [ngClass]="{'collapse': collapsed, 'navbar-collapse': true}">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">Latest</a>
+                </li>
+                <li class="nav-item" >
+                    <a class="nav-link" routerLink="/feature" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">Feature</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="/popular" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">Popular</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- Banner Section -->
+<div class="banner-section">
+    <div>
+        <h2>ux blog</h2>
+        <h4>Welcome to the Ux blog section. You will find ALL the Ux blog posts over here. You can filter them using search.</h4>
+    </div>
+</div>
+<!-- Banner Section -->
+<router-outlet></router-outlet>
+
+<div class="subscribe-section"> 
+    <h4>Sign up to get best 
+        and freshest content</h4>
+        <form>
+            <input type="text" name="email" class="form-control" placeholder="Email Address" ngModal>
+            <button type="submit" class="btn subscribe-btn" value="subscribe">Subscribe</button>
+        </form>
+        <p>More of a social being? We’re also on Instagram and Twitter</p>
+</div>

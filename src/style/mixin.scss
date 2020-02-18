@@ -1,0 +1,25 @@
+// Box Shadow 
+@mixin box-shadow($bs) {
+    -webkit-box-shadow: $bs;
+    -moz-box-shadow: $bs;
+    box-shadow: $bs;
+}
+
+@mixin input-placeholder($ph-color,$ph-size) {
+     &::-webkit-input-placeholder { 
+        color: $ph-color;
+        font-size: $ph-size;
+      }
+      &::-moz-placeholder { 
+        color: $ph-color;
+        font-size: $ph-size;
+      }
+      &:-ms-input-placeholder { 
+        color: $ph-color;
+        font-size: $ph-size;
+      }
+      &:-moz-placeholder { 
+        color: $ph-color;
+        font-size: $ph-size;
+      }
+}

@@ -1,0 +1,25 @@
+@import '../../../style/style.scss';
+
+.custom-navbar {
+    background-color: $navbg-color;
+    @include box-shadow(0px 0px 8px 0px rgba(0,0,0,0.42));
+    .navbar-brand {
+        color:$brand-color;
+        font-size: 36px;
+        font-weight: bolder;
+    }
+    .navbar-nav {
+        .nav-item {
+            .nav-link {
+                font-size: $sm-text;
+                color:$text-color;
+                font-weight: $medium;
+            }
+        }
+    }
+    .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'><path stroke='rgba(85, 101, 117, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>");
+        cursor: pointer;
+    }
+}
+

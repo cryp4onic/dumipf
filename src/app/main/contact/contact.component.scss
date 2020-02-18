@@ -1,0 +1,76 @@
+@import '../../../style/style.scss';
+
+.contactus-section {
+    background-color: #2A2F4F;
+    padding: 40px 0px;
+    min-height: 100vh;
+    position: relative;
+    .contactus-block {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 6px;
+        width: 680px;
+        border-radius: 10px;
+        overflow: hidden;
+        background-color: $white-color;
+        .img-block {
+            background-image: url('../../../assets/img/contactimage.jpg');
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            align-items: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            padding: 64px 15px;
+            position: relative;
+            width:100%;
+            z-index: 1;
+            &:before {
+                content: "";
+                display: block;
+                position: absolute;
+                z-index: -1;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                background-color: rgba(54,84,99,.7);
+            }
+            span {
+                font-size: 24px;
+                margin-bottom: 15px;
+                color: $white-color;
+                font-weight: $bold;
+            }
+            p {
+                font-size: 18px;
+                color: $white-color;
+                font-weight: $regular;
+            }
+        }
+        .contactform-block {
+            width:100%;
+            padding:43px 88px 57px 70px;
+            font-size: 16px;
+            input {
+                border-top:0px;
+                border-left: 0px;
+                border-right: 0px;
+                @include input-placeholder(gray,16px);
+            }
+            textarea {
+                border-top: 0px;
+                border-right: 0px;
+                border-left: 0px;
+                @include input-placeholder(gray,16px);
+            }
+            .submit-btn {
+                background-color: $brand-color;
+                color: $white-color;
+            }
+        }
+    }
+}

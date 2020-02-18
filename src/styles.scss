@@ -1,0 +1,36 @@
+@import './style/style.scss';
+
+body {
+    padding: 0px;
+    margin: 0px;
+    font-family: $font-family;
+}
+
+:focus {
+    outline:0px !important;
+}
+
+.btn {
+    &:focus {
+        box-shadow: none !important;
+    }
+}
+.article-section {
+    padding:40px 0px;
+}
+
+@media (min-width: 992px) {
+    .navbar-nav {
+        .nav-link {
+            padding-right: 1.0rem !important;
+            padding-left: 1.0rem !important; 
+        }
+    }
+}
+
+.form-control {
+    &:focus {
+        box-shadow: none !important;
+        border-color:#ced4da !important;
+    }
+}

@@ -1,0 +1,20 @@
+[
+    { 
+        "imagePath" : "assets/img/blog-1.png",
+        "heading" : "Heading 1",
+        "description" : "From wireframe to high-fidelity. Colours, Typography, Spacing & deliverables.",
+        "name" : "John Doe"
+    },
+    { 
+        "imagePath" : "assets/img/blog-1.png",
+        "heading" : "Heading 2",
+        "description" : "From wireframe to high-fidelity. Colours, Typography, Spacing & deliverables.",
+        "name" : "Dumini Shanika"
+    },
+    { 
+        "imagePath" : "assets/img/blog-1.png",
+        "heading" : "Heading 3",
+        "description" : "From wireframe to high-fidelity. Colours, Typography, Spacing & deliverables.",
+        "name" : "Peter Parker"
+    }
+]

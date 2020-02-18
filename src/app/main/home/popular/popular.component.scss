@@ -1,0 +1,51 @@
+@import './../../../../style/style.scss';
+
+.article-section {
+    text-align: center;
+    h3 {
+        color:$black-color;
+        font-size:$xlg-text;
+        padding-bottom:40px;
+        text-align: left;
+    }
+    .blog-block {
+        @include box-shadow(3px 3px 15px 0px rgba(0,0,0,0.35));
+        margin-bottom: 40px;
+        .img-block {
+            width:100%;
+            .category-block {
+                margin-top: -10px;
+                text-align: center;
+                span {
+                    background-color: #556575;
+                    padding: 10px;
+                    color: $white-color;
+                    font-size: 16px;
+                    font-weight: bold;
+                }
+            }
+        }
+        .content-block {
+            padding:25px;
+            text-align: center;
+            h4 {
+                font-size: 16px;
+                color: $black-color;
+                font-weight: bold;
+            }
+            p {
+                font-size: 12px;
+                color: #9b9b9b;
+                font-weight: bold;
+            }
+        }
+    }
+    .more-btn {
+        background-color: $white-color;
+        border: 2.5px solid $brand-color;
+        color: $brand-color;
+        font-size: 18px;
+        font-weight: $bold;
+        text-align: center;
+    }
+}
